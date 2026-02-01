@@ -47,6 +47,12 @@
             margin: 10px;
         }
 
+        #introScreen {
+            background: transparent;
+            border-radius: 0;
+            margin: 0;
+        }
+
         .screen.active {
             display: flex;
         }
@@ -169,7 +175,7 @@
         }
 
         .players-list {
-            margin: 10px 0;
+            margin: 4px 0;
             max-height: 150px;
             overflow-y: auto;
         }
@@ -521,7 +527,7 @@
                     <input type="text" id="playerInputA" placeholder="Nombre del jugador">
                     <button onclick="addPlayerToTeam('A')">+ Añadir</button>
                 </div>
-                <div class="players-list" id="playersA" style="max-height: 60px;"></div>
+                <div class="players-list" id="playersA" style="max-height: 130px;"></div>
             </div>
 
             <button class="btn" onclick="goToSetupB()" style="margin-top: 6px; margin-bottom: 4px;">
@@ -552,7 +558,7 @@
                     <input type="text" id="playerInputB" placeholder="Nombre del jugador">
                     <button onclick="addPlayerToTeam('B')">+ Añadir</button>
                 </div>
-                <div class="players-list" id="playersB" style="max-height: 60px;"></div>
+                <div class="players-list" id="playersB" style="max-height: 130px;"></div>
             </div>
 
             <button class="btn" onclick="startGame()" style="margin-top: 6px; margin-bottom: 4px;">▶️ INICIAR JUEGO</button>
